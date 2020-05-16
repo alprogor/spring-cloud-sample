@@ -6,12 +6,16 @@
 
     <groupId>com.example.study</groupId>
     <artifactId>spring-cloud-eureka-sample</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
         <module>spring-cloud-eureka-server-7001</module>
         <module>spring-cloud-message-service-8001</module>
         <module>spring-cloud-message-consumer-9001</module>
+        <module>spring-cloud-eureka-cluster-server-7002</module>
+        <module>spring-cloud-eureka-cluster-server-7003</module>
+        <module>spring-cloud-eureka-cluster-server-7004</module>
     </modules>
 
 
