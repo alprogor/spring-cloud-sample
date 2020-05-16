@@ -1,0 +1,8 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #配置Eureka Server的交互地址
+    register-with-eureka: false # 由于它不是一个服务提供者,不注册到eureka
