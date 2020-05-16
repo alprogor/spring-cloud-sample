@@ -11,6 +11,8 @@
     <modules>
         <module>spring-cloud-config-server-9001</module>
         <module>spring-cloud-config-client-8001</module>
+        <module>spring-cloud-config-client-remote-8002</module>
+        <module>spring-cloud-config-server-remote-9002</module>
     </modules>
 
     <!--使用dependencyManagement锁定依赖的版本 start-->
