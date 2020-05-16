@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+---
+spring:
+  profiles: dev
+user:
+  name: admindev9004
+---
+spring:
+  profiles: test
+
+user:
+  name: admintest9004

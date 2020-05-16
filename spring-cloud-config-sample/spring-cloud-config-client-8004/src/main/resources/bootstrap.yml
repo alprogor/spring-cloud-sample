@@ -1,0 +1,19 @@
+server:
+  port: 8004
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka # 指定eureka 服务端交互地址
+    register-with-eureka: false
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      fail-fast: true # 拉取不到就报错
+      discovery:
+        enabled: true # 通过服务发现的方式来获取
+        service-id: config-server # Config Server服务名为config-server
+      profile: dev

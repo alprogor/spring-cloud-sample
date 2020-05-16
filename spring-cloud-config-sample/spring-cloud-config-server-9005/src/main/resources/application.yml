@@ -1,0 +1,20 @@
+server:
+  port: 9005
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka # 指定eureka 服务端交互地址
+  instance:
+    instance-id: config-server-9005 # 当前服务实例名称
+    prefer-ip-address: true
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native # 配置spring cloud config 从本地读取配置
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config-center # 设置从本地哪个目录搜索配置文件
