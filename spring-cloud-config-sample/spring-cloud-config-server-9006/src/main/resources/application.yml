@@ -1,0 +1,25 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: spring-cloud-config-9006
+  profiles:
+    active: native # 配置spring cloud config 从本地读取配置
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config-center # 设置从本地哪个目录搜索配置文件
+  rabbitmq: # 配置rabbitmq
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  bus:
+    trace:
+      enabled: true # 开启这个，这样才会给其他的服务端发送消息
+management:
+  endpoints: # 开启端点，这样可以访问端点来发请求
+    web:
+      exposure:
+        include: "*" # 这里是全部的意思，有很多端口，比如我们这里用的端点bus-refresh，你也可以这里赋值为bus-refresh

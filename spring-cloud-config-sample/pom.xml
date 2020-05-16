@@ -19,6 +19,8 @@
         <module>spring-cloud-config-server-9004</module>
         <module>spring-cloud-config-server-9005</module>
         <module>spring-cloud-eureka-server-7001</module>
+        <module>spring-cloud-config-server-9006</module>
+        <module>spring-cloud-config-client-8006</module>
     </modules>
 
     <!--使用dependencyManagement锁定依赖的版本 start-->
