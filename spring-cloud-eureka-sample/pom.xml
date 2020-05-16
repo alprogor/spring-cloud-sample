@@ -16,6 +16,8 @@
         <module>spring-cloud-eureka-cluster-server-7002</module>
         <module>spring-cloud-eureka-cluster-server-7003</module>
         <module>spring-cloud-eureka-cluster-server-7004</module>
+        <module>spring-cloud-eureka-server-auth-7005</module>
+        <module>spring-cloud-message-service-auth-8002</module>
     </modules>
 
 

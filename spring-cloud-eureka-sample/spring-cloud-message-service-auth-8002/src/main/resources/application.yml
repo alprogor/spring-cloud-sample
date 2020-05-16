@@ -1,0 +1,16 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: MessageService # 多个同功能的服务使用应用名application.name来注册,这个应用名你可以在eureka 中看到,它变成了服务名
+
+# eureka配置:
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://localhost:7005/eureka # 这样无法访问有权限的eureka server
+      defaultZone: http://admin888:123456@localhost:7005/eureka # admin888 是用户名，123456是密码
+  instance:
+    instance-id: MessageService8002 # 当前服务实例名称
+    prefer-ip-address: true

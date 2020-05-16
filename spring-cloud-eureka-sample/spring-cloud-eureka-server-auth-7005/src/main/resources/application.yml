@@ -1,0 +1,14 @@
+# 配置服务端口
+server:
+  port: 7005
+
+# 配置eureka相关
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+#      defaultZone: http://admin888:123456@localhost:7005/eureka/
+      defaultZone: http://localhost:7005/eureka/
