@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://localhost:9003 # 配置从哪里拉取配置
+      # 密码认证方式一：
+#      uri: http://admin888:123456@localhost:9003/
+      # 密码认证方式二
+      username: admin888
+      password: 123456
+      profile: test
+      # 从配置文件拉取的配置文件的profile,如果你配了上面这个profile，那么读取的配置文件是{spring.application.name}.yml
+      fail-fast: true # 如果拉取失败，那么直接就报错，而不是使用默认端口
+#  profiles:
+#    active: test # 如果在这里设置profiles,那么拉取的配置文件是 {spring.application.name}-{profiles.active}.yml
+
