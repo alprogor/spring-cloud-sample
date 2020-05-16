@@ -1,0 +1,12 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: spring-cloud-config-9001
+  profiles:
+    active: native # 配置spring cloud config 从本地读取配置
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config-center # 设置从本地哪个目录搜索配置文件

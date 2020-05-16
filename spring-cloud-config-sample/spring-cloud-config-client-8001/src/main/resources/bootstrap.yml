@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://localhost:9001 # 配置从哪里拉取配置
+      profile: test
+      # 从配置文件拉取的配置文件的profile,如果你配了上面这个profile，那么读取的配置文件是{spring.application.name}.yml
+#  profiles:
+#    active: test # 如果在这里设置profiles,那么拉取的配置文件是 {spring.application.name}-{profiles.active}.yml
